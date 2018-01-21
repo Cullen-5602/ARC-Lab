@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ARC-Lab</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="start">Got It</string>
+    <string name="app_frame">Advanced Robotic Control Lab</string>
+    <string name="Qinit">A Quantum Initiative</string>
+    <string name="ROS">ROS</string>
+    <string name="RobStd">Robot Studio</string>
+    <string name="Rapid">Rapid</string>
+    <string name="txt_qgc">Quantum</string>
+    <string name="text_qarc">Q-ARC Lab</string>
+    <string name="txt_login">Login</string>
+    <string name="moto">Growth Unbound</string>
+    <string name="arc_info">Quantum School of Technology recently signed an MOU with APS GmbH, European center for mechatronics – Germany. Under this lab, the students at Quantum are getting extensive training on cutting edge Robotics Software under German trainers and supervisors. This training is meant to pave the way for Quantum students to access the industrial robots located in Germany in companies like Volkswagen, BMW, Mercedes, etc. And apply their work practically.\n\nQuantum has already sent two of its faculties, Assistant Professors namely Anees Ahmed and Manish Mittal to Germany on a Special Training with a purpose to get an additional knowledge on automation and industrial Robotics. The faculty has spend 15 days at the advanced center in Germany for the training and got well trained in latest robotic technologies by German experts.\n\nThe aim of ARC lab is to enhance the current education by introducing concrete industrial automation concepts by teaching robotics in Indian universities, with access to real industrial. Further, these labs can support Indian industries including SMEs by providing automation solutions tested under real production requirements.\n\nARC provides the students the access to industrial robotics under production conditions with remote control. These practical courses allow direct control of the industrial robots in Germany from Quantum. The students learn simulating, programming and controlling in order to test their results at these industrial robots, which are equipped with grippers, sensors, etc.\n\nThe students trained in ARC software shall become highly paid, skilled engineers for large industrial like automobile, food processing, power and other automated manufacturing industries both in India and abroad.\n\nAnother great move by Quantum, awarded as the “Best Engineering College Promoting Innovation in North India.”\n\n\nQuantum School of Technology\n“Growth Unbound”\n</string>
+</resources>
