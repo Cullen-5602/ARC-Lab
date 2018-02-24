@@ -25,18 +25,4 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/dev"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="51dp"
-        android:fontFamily="casual"
-        android:text="Bhagwan Singh"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="18sp"
-        android:textStyle="bold|italic" />
-
 </RelativeLayout>

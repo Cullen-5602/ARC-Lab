@@ -3,6 +3,8 @@ package in.edu.quantum.arc_lab;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.content.Intent;
+import android.view.View;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -12,7 +14,42 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        Log.d(msg. "The onCreate() event.");
+        Log.d(msg, "The onCreate() event.");
+    }
+
+    public void onClick(View view){
+        Intent i = new Intent (this, MainActivity.class);
+        startActivity(i);
+    }
+
+    public void onClickROS(View view){
+        Intent i = new Intent (this, MainActivity.class);
+        startActivity(i);
+    }
+
+    public void onClickRapid(View view){
+        Intent i = new Intent (this, MainActivity.class);
+        startActivity(i);
+    }
+
+    public void onClickAdv(View view){
+        Intent i = new Intent (this, MainActivity.class);
+        startActivity(i);
+    }
+
+    public void onClickCpp(View view){
+        Intent i = new Intent (this, MainActivity.class);
+        startActivity(i);
+    }
+
+    public void onClickArc(View view){
+        Intent i = new Intent (this, qarcActivity.class);
+        startActivity(i);
+    }
+
+    public void onClickPda(View view){
+        Intent i = new Intent (this, PdaActivity.class);
+        startActivity(i);
     }
 
     @Override
@@ -42,6 +79,6 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        Log.d(msg, "The onDestroy() event.")
+        Log.d(msg, "The onDestroy() event.");
     }
 }

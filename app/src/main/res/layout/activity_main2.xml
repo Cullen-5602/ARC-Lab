@@ -58,8 +58,11 @@
             android:id="@+id/log"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
             android:background="@color/bg_screen1"
-            android:src="@drawable/log" />
+            android:src="@drawable/log"
+            android:onClick="onClick"
+            tools:ignore="ContentDescription" />
 
     </LinearLayout>
 
@@ -67,20 +70,21 @@
         android:id="@+id/layer01"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/background_light"
-        android:layout_marginTop="130dp"
-        android:layout_marginBottom="0dp"
         android:layout_above="@+id/linearLayout_menu"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="130dp"
+        android:background="#ffffff"
+        android:padding="10dp">
 
         <LinearLayout
             android:id="@+id/linearLayout_menu1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/ros_ic"
@@ -88,15 +92,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/ros_ic" />
-
-            <ImageButton
-                android:id="@+id/rpbptstd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/robotstd2_ic" />
+                android:src="@drawable/ros_ic"
+                android:onClick="onClickROS"
+                tools:ignore="ContentDescription" />
 
             <ImageButton
                 android:id="@+id/rapid_ic"
@@ -104,7 +102,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/rapid_ic" />
+                android:src="@drawable/rapid_ic"
+                android:onClick="onClickRapid"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 
@@ -114,7 +114,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/linearLayout_menu1"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:background="#ffffff">
 
             <TextView
                 android:id="@+id/txt_ros"
@@ -123,28 +124,14 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
+                android:text="@string/text_ROS"
+                android:onClick="onClickROS"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:typeface="monospace"
-                android:visibility="visible"
-                android:text="@string/ROS" />
-
-            <TextView
-                android:id="@+id/txt_robotstd"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:typeface="monospace"
-                android:visibility="visible"
-                android:text="@string/RobStd" />
+                android:visibility="visible" />
 
             <TextView
                 android:id="@+id/txt_rapid"
@@ -153,13 +140,14 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
+                android:text="@string/text_Rapid"
+                android:onClick="onClickRapid"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:typeface="monospace"
-                android:visibility="visible"
-                android:text="@string/Rapid" />
+                android:visibility="visible" />
 
         </LinearLayout>
 
@@ -167,8 +155,9 @@
             android:id="@+id/linearLayout_menu3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="122dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout_menu2"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <ImageButton
@@ -177,7 +166,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/advc_ic" />
+                android:src="@drawable/advc_ic"
+                android:onClick="onClickAdv"
+                tools:ignore="ContentDescription" />
 
             <ImageButton
                 android:id="@+id/cpp_ic"
@@ -185,15 +176,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/cpp_ic" />
-
-            <ImageButton
-                android:id="@+id/pda_ic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/pda" />
+                android:src="@drawable/cpp_ic"
+                android:onClick="onClickCpp"
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
 
@@ -204,7 +189,7 @@
             android:layout_below="@+id/linearLayout_menu3"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_marginTop="7dp">
+            android:background="#ffffff">
 
             <TextView
                 android:id="@+id/txt_advc"
@@ -213,13 +198,15 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
-                android:text="Advanced C"
+                android:text="@string/text_Advc"
+                android:onClick="onClickAdv"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:typeface="monospace"
-                android:visibility="visible" />
+                android:visibility="visible"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/txt_cpp"
@@ -228,7 +215,67 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
-                android:text="C++"
+                android:text="@string/text_cpp"
+                android:onClick="onClickCpp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:visibility="visible"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_menu5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_menu4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/q_arc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:src="@drawable/dev2_ic"
+                android:onClick="onClickArc"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/pda_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:src="@drawable/pda"
+                android:onClick="onClickPda"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_menu6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_menu5"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/txt_qarc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:text="@string/text_qarc"
+                android:onClick="onClickArc"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="17sp"
@@ -243,103 +290,15 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:fontFamily="monospace"
-                android:text="Development"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:typeface="monospace"
-                android:visibility="visible" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout_menu5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="244dp"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/qgc_ic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/qgc_ic" />
-
-            <ImageButton
-                android:id="@+id/q_arc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/dev2_ic" />
-
-            <ImageButton
-                android:id="@+id/login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/login_ic" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout_menu6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/linearLayout_menu5"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="7dp">
-
-            <TextView
-                android:id="@+id/txt_QGC"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:text="@string/txt_qgc"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:typeface="monospace"
-                android:visibility="visible" />
-
-            <TextView
-                android:id="@+id/txt_qarc"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
+                android:text="@string/text_Pda"
+                android:onClick="onClickPda"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:typeface="monospace"
                 android:visibility="visible"
-                android:text="@string/text_qarc" />
-
-            <TextView
-                android:id="@+id/txt_login"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:typeface="monospace"
-                android:visibility="visible"
-                android:text="@string/txt_login" />
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 

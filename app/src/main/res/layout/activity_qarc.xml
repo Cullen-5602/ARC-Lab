@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.edu.quantum.arc_lab.qarcActivity"
+    android:background="@color/bg_screen4">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/qarc_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/arc_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/arc_1"
+                tools:ignore="ContentDescription"
+                android:layout_weight="0.21" />
+
+            <TextView
+                android:id="@+id/text_arc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="serif"
+                android:text="@string/text_arc"
+                android:textAlignment="center"
+                android:textColor="#1a7366"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:typeface="normal"/>
+
+            <TextView
+                android:id="@+id/text_arc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="@string/text_arc1"
+                android:textAlignment="textStart"
+                android:textColor="@color/bg_screen1"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_arc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="@string/text_arc2"
+                android:textAlignment="textStart"
+                android:textColor="@color/bg_screen1"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_arc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="@string/text_arc3"
+                android:textAlignment="textStart"
+                android:textColor="@color/bg_screen1"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_arc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="@string/text_arc4"
+                android:textAlignment="textStart"
+                android:textColor="@color/bg_screen1"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_arc5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="@string/text_arc5"
+                android:textAlignment="textStart"
+                android:textColor="@color/bg_screen1"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_arc6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="@string/text_arc6"
+                android:textAlignment="textStart"
+                android:textColor="@color/bg_screen1"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/text_arc7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/text_arc7"
+                android:textAlignment="center"
+                android:textColor="@color/bg_screen1"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+
+
+            <TextView
+                android:id="@+id/abt_aps_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/abt_aps_rs"
+                android:textAlignment="viewStart"
+                android:textColor="#158763"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"/>
+
+            <Button
+                android:id="@+id/aps_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.21"
+                android:background="@color/bg_screen1"
+                android:fontFamily="serif-monospace"
+                android:text="Button"
+                android:textAlignment="center"
+                android:textColor="@color/bg_screen4"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                tools:text="@string/aps_rs" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

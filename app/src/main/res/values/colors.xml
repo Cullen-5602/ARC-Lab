@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF6D0C0E</color>
+    <color name="colorPrimary">#6d0c0e</color>
     <color name="colorPrimaryDark">#FF6D0C0E</color>
     <color name="colorAccent">#69000000</color>
 
+
+    <color name="layer1">#4DB6AC</color>
+    <color name="layer2">#26A69A</color>
+    <color name="layer3">#009688</color>
+    <color name="dev_font"></color>
+
     <!-- Screen background color -->
-    <color name = "bg_screen1">#FF6D0C0E</color>
-    <color name = "bg_screen2">#12242b</color>
+    <color name = "bg_screen1">#6d0c0e</color>
+    <color name = "bg_screen2">#1b9579</color>
     <color name = "bg_screen3">#abe6d6</color>
+    <color name=  "bg_screen4">#ffffff</color>
+    <color name = "bg_screen5">#000000</color>
 
 
     <!-- dot inactive colors -->

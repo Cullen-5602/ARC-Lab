@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_screen1">
+
+    <RelativeLayout
+        android:id="@+id/ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_screen1"
+        android:padding="10dp"
+        android:textAlignment="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/arc_2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/ref_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/ref_head"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/ref_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/ref_body"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ref_head"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/abt_dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/abt_dev"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/bg_screen4"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:background="@color/bg_screen1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_screen1">
+
+        <LinearLayout
+            android:id="@+id/dev_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:background="@color/bg_screen1"
+            tools:ignore="RtlHardcoded,RtlSymmetry">
+
+            <ImageView
+                android:id="@+id/deve_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/deve_img"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <TextView
+                    android:id="@+id/dev1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:text="@string/dev1"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/bg_screen4"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/dev2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:text="@string/dev2"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/bg_screen4"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/dev3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif"
+                    android:text="@string/dev3"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/bg_screen4"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ecc4c4"
+        android:padding="2dp"
+        android:text="@string/ref_conn"
+        android:textColor="#FF730301"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/data" />
+
+    <LinearLayout
+        android:id="@+id/connect_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#730301"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/connect"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageButton
+            android:id="@+id/help_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/fb_l"
+            android:layout_weight="1"
+            android:tag="https://www.facebook.com/rinzex.ind"
+            android:onClick="openBrowser"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/help_tw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/tw_l"
+            android:layout_weight="1"
+            android:tag="https://twitter.com/Bhagwan5602"
+            android:onClick="openBrowser"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/help_ytb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/yt_l"
+            android:layout_weight="1"
+            android:tag="https://www.youtube.com/channel/UCj8zu0NkQiP1aW6qmEu0eTA"
+            android:onClick="openBrowser"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/help_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:onClick="openBrowser"
+            android:src="@drawable/web"
+            android:tag="http://hritikr16.wixsite.com/hdraj/csrst-temp"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+</LinearLayout>
